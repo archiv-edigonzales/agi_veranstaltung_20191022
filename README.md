@@ -62,20 +62,16 @@ GRETL-Job inkl. SQL zeigen.
 
 ```
 export ORG_GRADLE_PROJECT_dbUriEdit="jdbc:postgresql://edit-db/edit"
-export ORG_GRADLE_PROJECT_dbUserEdit="gretl"
-export ORG_GRADLE_PROJECT_dbPwdEdit="gretl"
+export ORG_GRADLE_PROJECT_dbUserEdit="admin"
+export ORG_GRADLE_PROJECT_dbPwdEdit="admin"
 export ORG_GRADLE_PROJECT_dbUriPub="jdbc:postgresql://pub-db/pub"
-export ORG_GRADLE_PROJECT_dbUserPub="gretl"
-export ORG_GRADLE_PROJECT_dbPwdPub="gretl"
+export ORG_GRADLE_PROJECT_dbUserPub="admin"
+export ORG_GRADLE_PROJECT_dbPwdPub="admin"
 ```
 
 ```
-
+./start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agi_veranstaltung_20191022_avimportexport --job-directory $(pwd)/ -b build.gradle transferAwjfForstreviere
 ```
 
+Zeigen in dbeaver und QGIS: "Objektabfrage". Auch in GRETL-Jenkins zeigen und Knopf drücken (?).
 
-Zum Abschluss auch in GRETL-Jenkins zeigen.
-
-
-int db
-qgis projekt
