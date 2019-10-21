@@ -132,20 +132,20 @@ INSERT INTO awjf_forstreviere.T_ILI2DB_TRAFO (iliname,tag,setting) VALUES ('SO_F
 INSERT INTO awjf_forstreviere.T_ILI2DB_TRAFO (iliname,tag,setting) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie_Forstrevier','ch.ehi.ili2db.inheritance','embedded');
 INSERT INTO awjf_forstreviere.T_ILI2DB_TRAFO (iliname,tag,setting) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstrevier','ch.ehi.ili2db.inheritance','newClass');
 INSERT INTO awjf_forstreviere.T_ILI2DB_TRAFO (iliname,tag,setting) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie','ch.ehi.ili2db.inheritance','newClass');
-INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie_Forstrevier',NULL);
-INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstkreis',NULL);
-INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie',NULL);
 INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstrevier',NULL);
+INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie',NULL);
+INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstkreis',NULL);
+INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie_Forstrevier',NULL);
 INSERT INTO awjf_forstreviere.T_ILI2DB_INHERITANCE (thisClass,baseClass) VALUES ('SO_Forstreviere_20170512.Forstreviere.Forstreviergeometrie_Forstkreis',NULL);
-INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.geomType','POLYGON');
 INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'forstkreis','ch.ehi.ili2db.foreignKey','forstreviere_forstkreis');
-INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.srid','2056');
-INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c2Min','1045000.000');
+INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c1Max','2870000.000');
+INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.geomType','POLYGON');
 INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c1Min','2460000.000');
 INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.coordDimension','2');
-INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'forstrevier','ch.ehi.ili2db.foreignKey','forstreviere_forstrevier');
 INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c2Max','1310000.000');
-INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c1Max','2870000.000');
+INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'forstrevier','ch.ehi.ili2db.foreignKey','forstreviere_forstrevier');
+INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.c2Min','1045000.000');
+INSERT INTO awjf_forstreviere.T_ILI2DB_COLUMN_PROP (tablename,subtype,columnname,tag,setting) VALUES ('forstreviere_forstreviergeometrie',NULL,'geometrie','ch.ehi.ili2db.srid','2056');
 INSERT INTO awjf_forstreviere.T_ILI2DB_TABLE_PROP (tablename,tag,setting) VALUES ('forstreviere_forstkreis','ch.ehi.ili2db.tableKind','CLASS');
 INSERT INTO awjf_forstreviere.T_ILI2DB_TABLE_PROP (tablename,tag,setting) VALUES ('forstreviere_forstreviergeometrie','ch.ehi.ili2db.tableKind','CLASS');
 INSERT INTO awjf_forstreviere.T_ILI2DB_TABLE_PROP (tablename,tag,setting) VALUES ('forstreviere_forstrevier','ch.ehi.ili2db.tableKind','CLASS');
@@ -368,7 +368,7 @@ MODEL AdministrativeUnitsCH_V1 (en)
 END AdministrativeUnitsCH_V1.
 
 !! ########################################################################
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_MODEL (filename,iliversion,modelName,content,importDate) VALUES ('Units-20120220.ili','2.3','Units','!! File Units.ili Release 2012-02-20
 
 INTERLIS 2.3;
@@ -466,7 +466,7 @@ CONTRACTED TYPE MODEL Units (en) AT "http://www.interlis.ch/models"
 
 END Units.
 
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_MODEL (filename,iliversion,modelName,content,importDate) VALUES ('CoordSys-20151124.ili','2.3','CoordSys','!! File CoordSys.ili Release 2015-11-24
 
 INTERLIS 2.3;
@@ -681,7 +681,7 @@ REFSYSTEM MODEL CoordSys (en) AT "http://www.interlis.ch/models"
 
 END CoordSys.
 
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_MODEL (filename,iliversion,modelName,content,importDate) VALUES ('CHBase_Part2_LOCALISATION_20110830.ili','2.3','InternationalCodes_V1 Localisation_V1{ InternationalCodes_V1} LocalisationCH_V1{ InternationalCodes_V1 Localisation_V1} Dictionaries_V1{ InternationalCodes_V1} DictionariesCH_V1{ InternationalCodes_V1 Dictionaries_V1}','/* ########################################################################
    CHBASE - BASE MODULES OF THE SWISS FEDERATION FOR MINIMAL GEODATA MODELS
    ======
@@ -853,7 +853,7 @@ MODEL DictionariesCH_V1 (en)
 END DictionariesCH_V1.
 
 !! ########################################################################
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_MODEL (filename,iliversion,modelName,content,importDate) VALUES ('SO_Forstreviere_20170512.ili','2.3','SO_Forstreviere_20170512{ GeometryCHLV95_V1 CHAdminCodes_V1}','INTERLIS 2.3;
 !!============================================================================== 
 !!@ File = "SO_Forstreviere_20170420.ili"; 
@@ -923,7 +923,7 @@ VERSION "2017-05-12"  =
   END Forstreviere;
 
 END SO_Forstreviere_20170512.
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_MODEL (filename,iliversion,modelName,content,importDate) VALUES ('CHBase_Part1_GEOMETRY_20110830.ili','2.3','GeometryCHLV03_V1{ CoordSys Units INTERLIS} GeometryCHLV95_V1{ CoordSys Units INTERLIS}','/* ########################################################################
    CHBASE - BASE MODULES OF THE SWISS FEDERATION FOR MINIMAL GEODATA MODELS
    ======
@@ -1101,7 +1101,7 @@ TYPE MODEL GeometryCHLV95_V1 (en)
 END GeometryCHLV95_V1.
 
 !! ########################################################################
-','2019-10-10 15:49:59.504');
+','2019-10-21 13:37:04.144');
 INSERT INTO awjf_forstreviere.T_ILI2DB_SETTINGS (tag,setting) VALUES ('ch.ehi.ili2db.createMetaInfo','True');
 INSERT INTO awjf_forstreviere.T_ILI2DB_SETTINGS (tag,setting) VALUES ('ch.ehi.ili2db.beautifyEnumDispName','underscore');
 INSERT INTO awjf_forstreviere.T_ILI2DB_SETTINGS (tag,setting) VALUES ('ch.interlis.ili2c.ilidirs','.;http://models.geo.admin.ch');
